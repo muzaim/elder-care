@@ -9,15 +9,16 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
-html,
 body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: visible;
 	overscroll-behavior-y: auto;
+	min-height: 100vh;
 }
 
 *,
@@ -456,7 +457,7 @@ h2 {
 
 .wave-container {
 	position: relative;
-	bottom: -120;
+	bottom: -120px;
 	left: 0;
 	width: 100%;
 	overflow: hidden;
@@ -1101,7 +1102,7 @@ h2 {
 @media (max-width: 768px) {
 	html,
 	body {
-		height: 100%;
+		min-height: 100%;
 		overflow-x: hidden;
 	}
 
